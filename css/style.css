@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.navbar i {
+    color: #cccccc;
+    font-size: 25px;
+}
+.obective {
+    color: #cccccc;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.card-body .card-title {
+    color: #178fc6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.card-body {
+    margin-bottom: -10px;
+}
+#subject,
+#hours,
+#date {
+    border: 2px solid #178fc6;
+    background-color: #cccccc;
+    color: #178fc6;
+    font-family: 'Poppins', sans-serif;
+}
+#subject::placeholder,
+#hours::placeholder,
+#date::placeholder {
+    color: #178fc6;
+}
+#description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border: 2px solid #178fc6;
+    background-color: #cccccc;
+    color: #178fc6;
+    font-size: 18px;
+    position: relative;
+}
+#description::placeholder {
+    position: absolute;
+    color: #178fc6;
+    top: 10%;
+}
+#search {
+    height: 40px;
+    width: 50%;
+    font-size: 22px;
+    position: relative;
+    left: 25%;
+}
+#add {
+    font-size: 22px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    padding: 5px 17px;
+    outline: none;
+    border: 2px solid #887f7f;
+    background-color: white;
+    color: #178fc6;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    margin-right: 15px;
+    /* margin-bottom: 20px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#add:hover {
+    color: white;
+    background-color: #178fc6;
+    border: 2px solid #178fc6;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+.d-none {
+    display: none;
+}
+
+#todoContainer .todoCard {
+    background-color: #cccccc;
+    border: 2px solid #178fc6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.todoCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.todoCard h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    color: #178fc6;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+    color: rgb(31, 31, 54);
+    margin: 0;
+}
+
+
+.fa-check {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    color: #025ec0;
+    margin-right: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+.fa-check:hover {
+    color: #013872;
+}
+.fa-pencil {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    color: #047e08;
+    margin-right: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+.fa-pencil:hover {
+    color: #003a02;
+}
+.fa-trash {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    color: #ca0202;
+    margin-right: 10px;
+    transition: color 0.3s, transform 0.3s;
+} 
+.fa-trash:hover {
+    color: #640202;
+}

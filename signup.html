@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan - Sign Up</title>
+    <link rel="icon" href="./media/download.png" type="icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .logo 
+        {
+            margin-bottom: -40px;
+        }
+        .signup-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(128, 127, 127, 0.356);
+        }
+        .signup-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .signup-subtitle {
+            font-size: 1rem;
+            color: #555;
+        }
+        .form-check-label {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+        <div class="text-center logo mb-0">
+            <img  src="./media/download.png" width="300px" height="250px" alt="logo">
+        </div>
+        <div class="row justify-content-center py-3" style="margin-top: -41px;">
+            <div class="col-lg-6 col-md-8">
+                <div class="signup-card bg-dark p-4">
+                    <h2 class="text-center text-white signup-title">Create a new account</h2>
+                    <p class="text-center text-white signup-subtitle">It’s quick and easy.</p>
+                    <hr style="color: white;">
+                    <form class="needs-validation" id="signUpForm" novalidate>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                                <div class="invalid-feedback">First name is required.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                                <div class="invalid-feedback">Last name is required.</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                            <div class="invalid-feedback">Enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="New password" required minlength="8">
+                            <div class="invalid-feedback">Password must be at least 8 characters long.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success text-white w-100">Sign Up</button>
+                        <hr style="color: white;">
+                        <div class="text-center">
+                            <a href="index.html" class="fw-bold text-primary mb-3 text-decoration-none text-info">Already have an account?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/signup.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
